@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int accountBalanceAfterPurchase(int purchaseAmount) {
+        int extra = purchaseAmount % 10;
+        int sol;
+        if(extra <5)
+        {
+           sol = 100 - (purchaseAmount-extra); 
+        }
+        else
+        {
+            sol = 100 -(purchaseAmount+(10-extra));
+        }
+        return sol; 
+    }
+};
